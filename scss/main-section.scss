@@ -1,0 +1,49 @@
+
+main, section {
+    border: 3px solid #0E5E6F;
+    width: 70%;
+    margin: auto;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+section {
+    background-position: 50% 60%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #FFEFD6;
+        opacity: 0.2;
+    }
+}
+
+button, input {
+    padding: 5px;
+    position: relative;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    transition: 0.3s;
+        
+    &:hover {
+        background: black;
+    }
+}
+
+h1 {
+    line-height:150px;
+}
+
+.shrink {
+    line-height: 100px;
+    font-size: 2em;
+    transition: 0.1s;
+}
+
